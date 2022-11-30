@@ -7,14 +7,5 @@
 
 
 <style scoped>
-.main{
-    margin-top: 15rem;
-}
-h2{
-    font-size: 40px;
-    text-align: center;
-}
-h3{
-        text-align: center;
-}
+
 </style>

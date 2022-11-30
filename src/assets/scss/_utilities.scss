@@ -1,0 +1,57 @@
+.centralize{
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn-primary{
+    background-color: $color-primary !important;
+    border-radius: 0;
+    color: $color-white !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2;
+    line-height: 1;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    &:hover, &:active, &:focus{
+        background-color: $color-primary;
+        outline: none;
+        border: none !important;
+    }
+}
+.error{
+    color: red;
+    font-size: 1.5rem;
+    font-family: $font-secondary;
+}
+.success-msg{
+    color: green;
+    font-family: $font-secondary;
+}
+
+.ant-btn:focus > span,
+.ant-btn:active > span {
+}
+.ant-btn.ant-btn-loading {
+  span {
+    margin-left: 0 !important;
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  &::before {
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.45);
+    z-index: 0;
+  }
+  .anticon.anticon-loading {
+    z-index: 2;
+    .anticon-spin {
+      color: $color-primary;
+      font-size: 2.5rem;
+    }
+  }
+}
